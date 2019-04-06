@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_screen"
+    android:theme="@style/AppTheme">
+
+
+    <TextView
+        android:id="@+id/ders_adi"
+        android:layout_width="155dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/shape_id"
+        android:fontFamily="sans-serif-condensed"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ders_notu"
+        android:layout_width="137dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="137dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/shape_id"
+        android:fontFamily="sans-serif-condensed"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/dersi_alan_kisi"
+        android:layout_width="137dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="137dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/shape_id"
+        android:fontFamily="sans-serif-condensed"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="8dp"
+        android:text="Dersi Alan Kişi Sayısı"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ders_notu" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:layout_marginStart="154dp"
+        android:layout_marginTop="41dp"
+        android:text="Öğrencinin Notu"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ders_adi" />
+</android.support.constraint.ConstraintLayout>

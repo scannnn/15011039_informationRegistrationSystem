@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_screen"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/gonder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/login_button"
+        android:onClick="gonder"
+        android:text="KAYDET"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/ad"
+        android:layout_width="140dp"
+        android:background="@drawable/shape_id"
+        android:layout_height="47dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/soyad"
+        android:layout_width="140dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/shape_id"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ad" />
+
+    <EditText
+        android:id="@+id/tc"
+        android:layout_width="140dp"
+        android:background="@drawable/shape_id"
+        android:layout_height="47dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/soyad" />
+
+    <EditText
+        android:id="@+id/tel"
+        android:layout_width="140dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/shape_id"
+        android:ems="10"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tc" />
+
+    <Button
+        android:id="@+id/resim_ekle"
+        android:layout_width="wrap_content"
+        android:layout_height="39dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="38dp"
+        android:background="@drawable/login_button"
+        android:text="Resim Ekle"
+        app:layout_constraintEnd_toStartOf="@+id/tc_tview"
+        app:layout_constraintHorizontal_bias="0.151"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resim" />
+
+    <ImageView
+        android:id="@+id/resim"
+        android:layout_width="128dp"
+        android:layout_height="138dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_person_white_24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:color/background_light" />
+
+    <TextView
+        android:id="@+id/ad_tview"
+        android:layout_width="53dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="4dp"
+        android:text="        AD:"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/ad"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/soyad_tview"
+        android:layout_width="53dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="31dp"
+        android:text=" SOYAD:"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/tc_tview"
+        app:layout_constraintEnd_toStartOf="@+id/soyad"
+        app:layout_constraintTop_toBottomOf="@+id/ad_tview" />
+
+    <TextView
+        android:id="@+id/tc_tview"
+        android:layout_width="53dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="4dp"
+        android:gravity="center"
+        android:text="        TC:"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/tc"
+        app:layout_constraintTop_toBottomOf="@+id/soyad_tview" />
+
+    <TextView
+        android:id="@+id/tel_tview"
+        android:layout_width="53dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="4dp"
+        android:text="TEL NO:"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/tel"
+        app:layout_constraintTop_toBottomOf="@+id/tc_tview" />
+
+    <EditText
+        android:id="@+id/d_yeri"
+        android:layout_width="140dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/shape_id"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tel" />
+
+    <TextView
+        android:id="@+id/d_yeri_tview"
+        android:layout_width="53dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="4dp"
+        android:text="DOGUM YERİ:"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/d_yeri"
+        app:layout_constraintTop_toBottomOf="@+id/tel_tview" />
+
+    <EditText
+        android:id="@+id/d_tarihi"
+        android:layout_width="140dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/shape_id"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/d_yeri" />
+
+    <TextView
+        android:id="@+id/d_tarihi_tview"
+        android:layout_width="53dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="5dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="8dp"
+        android:text="DOGUM TARİHİ:"
+        app:layout_constraintEnd_toStartOf="@+id/d_tarihi"
+        app:layout_constraintTop_toBottomOf="@+id/d_yeri_tview" />
+
+    <Button
+        android:id="@+id/temizle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="temizle"
+        android:background="@drawable/login_button"
+        android:text="TEMİZLE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/mail_tview"
+        android:layout_width="53dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="4dp"
+        android:text="E-MAİL:"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/mail"
+        app:layout_constraintTop_toBottomOf="@+id/d_tarihi_tview" />
+
+    <EditText
+        android:id="@+id/mail"
+        android:layout_width="140dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/shape_id"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/d_tarihi" />
+
+</android.support.constraint.ConstraintLayout>
